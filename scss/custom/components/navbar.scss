@@ -1,0 +1,29 @@
+@import "../colors.scss";
+
+.my-navbar {
+  background-color:rgba(19, 72, 104, 0.65);
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: $white;
+    &:hover {
+        color: $light_blue;
+      }
+    &:focus {
+        color: $light_blue;
+    }
+    &:active {
+      color: $light_blue;
+  }
+    padding-right: 1.5rem;
+    @media (min-width: 992px) {
+      font-size: 0.5rem;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .navbar-light .navbar-toggler {
+    border: none;
+  }

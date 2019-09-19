@@ -1,0 +1,48 @@
+@import "bootstrap-overrides";
+@import "reset";
+
+@import "custom/components/navbar";
+@import "custom/components/intro";
+@import "custom/components/about";
+@import "custom/components/projects";
+@import "custom/components/contact";
+@import "custom/components/projects";
+@import "custom/colors";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    html {
+      font-size: 2rem;
+    }
+  }
+
+
+
+
+
+
