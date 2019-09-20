@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(251, 252, 255);
-  margin: 10vh;
+  background-color: #0a2536;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .pr-carousel {
@@ -15,24 +16,12 @@
   }
 }
 
+.pr-main-container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 .pr-container {
-  width: 100vw;
-  height: 90vh;
-  padding: 0 10%;
-  // position: relative;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 50% 50%;
-  @media (min-width: 1200px) {
-    grid-template-rows: 100%;
-    max-height: 500px;
-    width: 90vw;
-  }
-  @media (min-aspect-ratio: 8/5)  {
-    grid-template-rows: 100%;
-    max-height: 500px;
-    width: 90vw;
-  }
+  padding: 0.2em;
 }
 
 .pr-image {
@@ -69,27 +58,15 @@
 
 .pr-image-rectangles {
   background-image: url("../../../assets/img/rectangles-md.png");
-  @include media-breakpoint-up(md) {
-    background-image: url("../../../assets/img/rectangles-lg.png");
-  }
-
-  @include media-breakpoint-up(xl) {
-    background-image: url("../../../assets/img/rectangles.png");
-  }
 }
 
 .pr-image-presents {
   background-image: url("../../../assets/img/presents-md.png");
-  @include media-breakpoint-up(md) {
-    background-image: url("../../../assets/img/presents-lg.png");
-  }
-
-  @include media-breakpoint-up(xl) {
-    background-image: url("../../../assets/img/presents.png");
-  }
 }
 
 .pr-data {
+  visibility: hidden;
+  position: absolute;
   padding: 2em;
   transition: opacity 0.4s;
   z-index: 0;
@@ -160,6 +137,7 @@
 }
 
 .pr-data::after {
+  visibility: hidden;
   -webkit-box-shadow: -11px 0px 29px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -11px 0px 29px -6px rgba(0, 0, 0, 0.75);
   box-shadow: -11px 0px 29px -6px rgba(0, 0, 0, 0.75);
