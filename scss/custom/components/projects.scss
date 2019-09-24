@@ -4,139 +4,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: $white;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-.pr-container {
-  height: 50vh;
-  max-height: 200px;
-  padding: 0.2em;
-  cursor: pointer;
-  @include media-breakpoint-up(md) {
-    max-height: 400px;
-  }
+.card {
+  height: 100%;
   &:hover {
-    filter: brightness(120%);
-    .pr-image {
-      z-index: 1;
-    }
+    border: 1px solid rgb(184, 182, 182);
+    filter: brightness(110%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(158,158,158,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(158,158,158,1);
+    box-shadow: 0px 0px 5px 0px rgba(158,158,158,1);
   }
 }
 
-.pr-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  -webkit-box-shadow: inset -1px 1px 20px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset -1px 1px 20px 4px rgba(0, 0, 0, 0.75);
-  box-shadow: inset -1px 1px 20px 4px rgba(0, 0, 0, 0.75);
-  width: 100%;
-  height: 100%;
-}
-
-.pr-image-hedgehog {
-  background-image: url("../../../assets/img/hedgehog.png");
-}
-
-.pr-image-grajcowka {
-  background-image: url("../../../assets/img/grajcowka.png");
-}
-
-.pr-image-rectangles {
-  background-image: url("../../../assets/img/rectangles.png");
-  @include media-breakpoint-up(lg) {
-    background-image: url("../../../assets/img/rectangles-md.png");
+.card-container {
+  margin-top: 1em;
+  span {
+    font-weight: bolder;
   }
 }
 
-.pr-image-presents {
-  background-image: url("../../../assets/img/presents.png");
-  @include media-breakpoint-up(lg) {
-    background-image: url("../../../assets/img/presents-md.png");
-  }
+.login-data {
+  text-align: right;
 }
 
-.pr-data {
-  position: absolute;
-  overflow: hidden;
-  border: 0.2em solid transparent;
-  top: 0;
-  left: 0;
-  padding: 0.5em;
-  height: 100%;
-  width: 100%;
-  transition: opacity 0.4s;
-  z-index: 2;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  line-height: 110%;
-  h2 {
-    margin-bottom: 10px;
-  }
-  p {
-    margin-bottom: 5px;
-  }
-
-  @include media-breakpoint-up(xs) {
-    h2 {
-      font-size: 1.1rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-  }
-  @include media-breakpoint-up(sm) {
-    p {
-      font-size: 1.1rem;
-    }
-    h2 {
-      font-size: 1.3rem;
-    }
-  }
-  @include media-breakpoint-up(md) {
-    p {
-      font-size: 0.8rem;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    h2 {
-      font-size: 1rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-  }
-
-  @include media-breakpoint-up(xl) {
-    p {
-      font-size: 0.55rem;
-      line-height: 100%;
-    }
-  }
+.project-title {
+  color: $black;
 }
 
-.pr-data::after {
-  -webkit-box-shadow: -11px 0px 29px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -11px 0px 29px -6px rgba(0, 0, 0, 0.75);
-  box-shadow: -11px 0px 29px -6px rgba(0, 0, 0, 0.75);
-  background-color: black;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
+.pr-divider {
+  width: 90%;
+  border-top: 2px solid $yellow;
+  opacity: 0.6;
 }
 
 .img-icon {
@@ -153,21 +56,9 @@
   &:hover {
     transform: scale(1.2, 1.2);
   }
-  @media (min-width: 992px) {
-    margin: 5px;
-  }
-  @include media-breakpoint-up(xs) {
-    width: 30px;
-    height: 30px;
-  }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     width: 40px;
     height: 40px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    width: 45px;
-    height: 45px;
   }
 }
 

@@ -25,19 +25,20 @@ html {
   
   @include media-breakpoint-up(md) {
     html {
-      font-size: 1.2rem;
+      h2: 1.2rem;
     }
   }
   
   @include media-breakpoint-up(lg) {
     html {
-      font-size: 1.4rem;
+      h2: 1.4rem;
+      p: 2rem;
     }
   }
 
   @include media-breakpoint-up(xl) {
     html {
-      font-size: 2rem;
+      h2: 2rem;
     }
   }
 

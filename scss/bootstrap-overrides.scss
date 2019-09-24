@@ -1,5 +1,11 @@
 $navbar-light-color: #FBFCFF;
 $carousel-control-color: black;
+.card-text {
+    margin-bottom: 1em;
+}
+
+$headings-margin-bottom: 1.5em;
+$headings-color: rgb(144, 145, 146);
 
 @import "bootstrap/functions";
 @import "bootstrap/variables";
